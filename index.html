@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Lead</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="scripts.js" defer></script>
+  </head>
+  <body>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DWU00000F8NTb" method="POST" onsubmit="return validateForm()">
+          <input type="hidden" name="oid" value="00DWU00000F8NTb">
+  <input type="hidden" name="retURL" value="http://google.com">
+          <input type="hidden" name="debug" value="1">
+          <input type="hidden" name="debugEmail" value="your-email@example.com">
+ 
+          <div class="section-header">Lead Information</div>
+          <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-2">
+              <label for="first_name">First Name </span></label>
+              <input id="first_name" name="first_name" type="text">
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="last_name">Last Name <span class="required-star">*</span></label>
+              <input id="last_name" name="last_name" type="text" required>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="company">Company <span class="required-star">*</span></label>
+              <input id="company" name="company" type="text" required>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="phone">Phone </span></label>
+              <input id="phone" name="phone" type="tel" >
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="email">Email</span></label>
+              <input id="email" name="email" type="email" >
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="status">Lead Status <span class="required-star">*</label>
+              <select id="status" name="status" required>
+                <option value="">--None--</option>
+                <option value="New">Open - Not Contacted</option>
+                <option value="Working">Working - Contacted</option>
+                <option value="Closed - Converted">Closed - Converted</option>
+                <option value="Closed - Not Converted">Closed - Not Converted</option>
+              </select>
+            </div>
+          </div>
+ 
+          <div class="section-header">Address Information</div>
+          <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-1">
+              <label for="street">Street</label>
+              <textarea id="street" name="street"></textarea>
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+              <label for="city">City</label>
+              <input id="city" name="city" type="text">
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+              <label for="state">State/Province</label>
+              <input id="state" name="state" type="text">
+            </div>
+            <div class="slds-col slds-size_1-of-3">
+              <label for="postal_code">ZIP/Postal Code</label>
+              <input id="postal_code" name="postal_code" type="text">
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="country">Country</label>
+              <input id="country" name="country" type="text">
+            </div>
+          </div>
+ 
+          <div class="section-header">Additional Information</div>
+          <div class="slds-grid slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-2">
+              <label for="product_interest">Product Interest</label>
+              <input id="product_interest" name="product_interest" type="text">
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="current_generators">Current Generator(s)</label>
+              <input id="current_generators" name="current_generators" type="text">
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="sic_code">SIC Code</label>
+              <input id="sic_code" name="sic_code" type="text">
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="primary">Primary</label>
+              <select id="primary" name="primary">
+                <option value="">--None--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+              <label for="number_of_locations">No. of Locations</label>
+              <input id="number_of_locations" name="number_of_locations" type="number">
+            </div>
+          </div>
+ 
+          <div class="section-header">Description Information</div>
+          <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-1">
+              <label for="description">Description</label>
+              <textarea id="description" name="description"></textarea>
+            </div>
+          </div>
+ 
+          <footer class="slds-modal__footer">
+            <button type="button" class="slds-button slds-button_neutral" onclick="closeModal()">Cancel</button>
+            <button type="submit" class="slds-button slds-button_brand">Save</button>
+          </footer>
+        </form>
+      </div>
+    </div>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+  </div>
+</body>
+</html>

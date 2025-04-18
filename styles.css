@@ -1,0 +1,123 @@
+/* body {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+  }
+   
+  .section-header {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a1a1a;
+    margin: 24px 0 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    background-color: rgb(161, 158, 158);
+  }
+   
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    font-size: 14px;
+  }
+   
+  textarea {
+    resize: vertical;
+    min-height: 60px;
+  }
+   
+  .required-star {
+    color: red;
+    margin-left: 2px;
+  }
+   
+  .custom-modal {
+    padding: 20px;
+  }
+   
+   */
+
+   body {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+   
+  .section-header {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a;
+    margin: 12px 0 6px;
+    border-bottom: 1px solid #ddd;
+    padding: 4px 8px;
+    line-height: 1.2;
+    background-color: rgb(161, 158, 158);
+    
+  }
+   
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+   
+  textarea {
+    resize: vertical;
+    min-height: 50px;
+  }
+   
+  label {
+    font-size: 12px;
+    margin-bottom: 4px;
+    display: block;
+  }
+   
+  .required-star {
+    color: red;
+    margin-left: 2px;
+  }
+   
+  .slds-grid,
+  .slds-grid.slds-wrap {
+    margin: 0;
+  }
+   
+  .slds-col {
+    padding: 4px;
+  }
+   
+  footer.slds-modal__footer {
+    margin-top: 16px;
+    text-align: right;
+  }
+   
+  .slds-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+   
+  form {
+    max-width: 700px;
+    margin: auto;
+  }
+   
