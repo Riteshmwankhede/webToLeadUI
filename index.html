@@ -16,9 +16,7 @@
         document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
       }
     }
-    setInterval(timestamp, 500);
-
-    function validateForm() {
+    validateForm() {
       const lastName = document.getElementById('last_name').value;
       const company = document.getElementById('company').value;
       const status = document.getElementById('status').value;
@@ -136,7 +134,7 @@
       </div>
       <div class="slds-col slds-size_1-of-2">
         <label for="number_of_locations">No. of Locations</label>
-        <input id="number_of_locations" name="number_of_locations" type="number">
+       ="number_of_locations" type="number">
       </div>
     </div>
 
@@ -150,7 +148,7 @@
 
     <div class="g-recaptcha" data-sitekey="6LeljRwrAAAAACSczSzlPCfjOh72U0bqSsB-6lRF"></div><br>
     <footer class="slds-modal__footer">
-      <button type="button" class="slds-button slds-button_neutral" onclick="closeModal()">Cancel</button>
+     " class="slds-button slds-button_neutral" onclick="closeModal()">Cancel</button>
       <button type="submit" class="slds-button slds-button_brand">Save</button>
     </footer>
   </form>
