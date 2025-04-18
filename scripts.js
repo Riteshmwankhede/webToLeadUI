@@ -14,18 +14,11 @@ function validateForm() {
   const status = document.getElementById('status').value;
   const captchaResponse = grecaptcha.getResponse();
 
-  if (!lastName || !company || !status) {
+  (!lastName || !company || !status) {
     alert('Please fill out all required fields.');
     return false;
   }
 
   if (!captchaResponse) {
     alert('Please complete the CAPTCHA.');
-    return false;
- () {
-  // Logic to close the modal
-  const modal = document.querySelector('.slds-modal');
-  const backdrop = document.querySelector('.slds-backdrop');
-  modal.classList.remove('slds-fade-in-open');
-  backdrop.classList.remove('slds-backdrop_open');
-}
+   
